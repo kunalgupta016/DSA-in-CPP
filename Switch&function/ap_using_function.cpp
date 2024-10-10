@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int AP(int n){
+	int ans=3*n+7;
+	return ans;
+}
+int main(){
+	int n;
+	cin>>n;
+	int ans = AP(n);
+	//ap is 3*n+7;
+	cout<<ans<<"\n";
+}
