@@ -35,7 +35,7 @@ void print(node* &head){
 
 node* getmiddle(node* head){
     node* slow = head;
-    node* fast = head->next;
+    node* fast = head;
     while(fast!=NULL && fast->next!=NULL){
         fast = fast->next->next;
         slow = slow->next;
