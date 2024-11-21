@@ -96,8 +96,5 @@ int main() {
 
     node* roo = search(root,value);
     preorder(roo);
-
-
-
     return 0;
 }
