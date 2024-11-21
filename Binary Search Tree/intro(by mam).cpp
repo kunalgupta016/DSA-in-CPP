@@ -65,9 +65,6 @@ node* search(node* root,int data){
       return   search(root->left,data );
     }
 }
-
-
-
 void preorder(node*root){
     if(root==NULL){
         return;
