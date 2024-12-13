@@ -48,6 +48,15 @@ int search(node* root,int data){
 }
 */
 
+void preorder(node*root){
+    if(root==NULL){
+        return;
+    }
+    cout<<root->data<<" ";
+    preorder(root->left);
+    preorder(root->right);
+}
+
 node* search(node* root,int data){
     
     if(root==NULL){
@@ -65,14 +74,7 @@ node* search(node* root,int data){
       return   search(root->left,data );
     }
 }
-void preorder(node*root){
-    if(root==NULL){
-        return;
-    }
-    cout<<root->data<<" ";
-    preorder(root->left);
-    preorder(root->right);
-}
+
 
 
 int main() {
@@ -93,8 +95,9 @@ int main() {
     //     cout<<"Node with value "<<value<<"Not found in the BST."<<endl;
     // }
 
+    preorder(search(root,value));
 
-    node* roo = search(root,value);
-    preorder(roo);
+
+    
     return 0;
 }
