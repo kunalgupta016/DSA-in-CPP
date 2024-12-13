@@ -69,8 +69,13 @@ void mergeSort(int *arr, int s, int e)
 
 int main()
 {
-    int arr[] ={1,2,3,1,67,1,4,65,23,45,88,12,92,34,89,34};
-    int n = sizeof(arr)/sizeof(arr[0]);
+    int arr[10];
+    int n =10;
+    for(int I=0;I<n;I++){
+        cout<<"Enter the "<<I+1<<"element";
+        cin>>arr[I];
+    }
+    cout<<endl;
     mergeSort(arr,0,n-1);
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
