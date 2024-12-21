@@ -60,10 +60,10 @@ int main() {
     edges.push_back(make_pair(1,2));
     edges.push_back(make_pair(1,4));
 
-    int vertex;
+    int vertex = 5;
 
     vector<int> ans = res(vertex , edges);
-    int n = sizeof(ans)/4;
+    int n = ans.size();
     for(int i=0;i<n;i++){
         cout<<ans[i]<<" ";
     }
